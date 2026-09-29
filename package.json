@@ -1,0 +1,20 @@
+{
+  "name": "azzurra",
+  "private": true,
+  "packageManager": "pnpm@11.28.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "node ./node_modules/nx/dist/bin/nx.js dev web",
+    "build": "node ./node_modules/nx/dist/bin/nx.js build web",
+    "lint": "node ./node_modules/nx/dist/bin/nx.js lint web",
+    "typecheck": "node ./node_modules/nx/dist/bin/nx.js typecheck web",
+    "check": "node ./node_modules/nx/dist/bin/nx.js run-many -t lint typecheck build"
+  },
+  "devDependencies": {
+    "@nx/eslint-plugin": "23.2.1",
+    "@nx/next": "23.2.1",
+    "nx": "23.2.1"
+  }
+}
